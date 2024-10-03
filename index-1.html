@@ -7,6 +7,114 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Final Project</title>
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    
+body {
+    
+    padding: 5px;
+    margin: 15px;
+    font-size: 25px;
+    font-family:Arial, sans-serif;
+}
+figure{
+    background-color:#f0f0f0;
+    color: black;
+    text-align: center;
+    border-radius: 35px;
+}
+
+h1 {
+    text-align: center;
+    font-family:Arial, sans-serif;
+    font-size: 1.95em;
+}
+
+h2{
+    text-align:center;
+  }
+
+li{
+    margin-top: 20px;
+}
+
+img{
+    border: 5px solid blue;
+    border-radius: 35px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+.label{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.grid{
+    display:grid;
+grid-template-columns:repeat(auto-fill,minmax(700px,1fr));
+gap:10px;
+}
+@media  all and (min-width:772px) {
+    figure{
+        background-color: blue;
+        text-align: center;
+        border-radius: 50%;
+    
+    }
+    img{
+        border: 5px solid blue;
+        border-radius: 50%;
+        width: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
+        transform: scale(40px);
+       
+      }
+      .grid{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        gap:10px;
+    }
+    .grid :nth-child(9){
+        grid-column: span 2;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #333333;
+    }
+    figure {
+        background-color: #444444; /* Slightly lighter for contrast */
+        color: #ffcc00;
+        border: 2px solid #000000;
+    }
+}
+@media  all and (min-width:992px) {
+    figure{
+        background-color: blue;
+        text-align: center;
+       border-radius: 35px;
+    
+    }
+    img{
+        border: 5px solid blue;
+        width: 100%;
+        border-radius: 35px;
+        box-sizing: border-box;
+        overflow: hidden;
+        transform: scale(40px);
+       
+      }
+      .grid{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        gap:10px;
+    }
+    .grid :nth-child(3n){
+        grid-column: span 2;
+    }
+  }
+  </style>
 </head>
 
 <body>
